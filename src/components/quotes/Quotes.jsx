@@ -60,9 +60,10 @@ class Quotes extends Component {
     const quote = this.viewQuote(this.state.idx);
     return (
       <div className="App">
+        <h2>Zadanie 3</h2>
         <Quote quote={quote} />
-        <Button func={this.prevQuote} text={"PREVIOUS QUOTE"} />
-        <Button func={this.setNewQuote} text={"NEW QUOTE"} />
+        <Button func={this.prevQuote} text={"Poprzedni cytat"} />
+        <Button func={this.setNewQuote} text={"Nowt cytat"} />
       </div>
     );
   }

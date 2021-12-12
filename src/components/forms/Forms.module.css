@@ -1,0 +1,8 @@
+.list {
+  list-style: none;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Button from "./button/Button";
+import Button from "../button/Button";
+import style from "./Forms.module.css";
 import { nanoid } from "nanoid";
 
 class Forms extends Component {
@@ -27,7 +28,7 @@ class Forms extends Component {
     }
   }
 
-  addBook = ({ title, author, priority, category }) => {
+  addBook = ({ id, title, author, priority, category }) => {
     const book = {
       id: nanoid(),
       title,
@@ -69,9 +70,10 @@ class Forms extends Component {
     const { books, title, author, priority, category } = this.state;
     return (
       <div>
-        <form id={nanoid()} onSubmit={this.handleSubmit}>
+        <h2>Zadanie 2</h2>
+        <form id={nanoid()} className={style.form} onSubmit={this.handleSubmit}>
           <label>
-            Tytuł książki
+            Tytuł książki{" "}
             <input
               value={title}
               id={nanoid()}
@@ -84,7 +86,7 @@ class Forms extends Component {
             />
           </label>
           <label>
-            Autor książki
+            Autor książki{" "}
             <input
               value={author}
               id={nanoid()}
@@ -97,7 +99,7 @@ class Forms extends Component {
             />
           </label>
           <label>
-            Priorytet przeczytania
+            Priorytet przeczytania{" "}
             <select
               id={nanoid()}
               name="priority"
@@ -113,7 +115,7 @@ class Forms extends Component {
               <option value="5">5</option>
             </select>
           </label>
-          <label for="category">Kategoria książki</label>
+          <label for="category">Kategoria książki </label>
           <select
             required
             id={nanoid()}
@@ -129,15 +131,15 @@ class Forms extends Component {
           <Button func={this.handleSubmit} text={"Dodaj ksiąkę"} />
         </form>
         {books.map(({ id, title, author, priority, category }) => (
-          <tr>
-            <td>{title}</td>
-            <td>{author}</td>
-            <td>{priority}</td>
-            <td>{category}</td>
-            <td>
-              <Button func={this.deleteBook} text={"Usuń"} />
-            </td>
-          </tr>
+          <ul className={style.list}>
+            <li>{title}</li>
+            <li>{author}</li>
+            <li>{priority}</li>
+            <li>{category}</li>
+            <li>
+              <Button func={() => this.deleteBook(id)} text={"Usuń"} />
+            </li>
+          </ul>
         ))}
       </div>
     );

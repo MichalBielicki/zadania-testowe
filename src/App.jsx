@@ -1,12 +1,12 @@
-import "./App.css";
-import Numbers from "./components/Numbers";
-import Forms from "./components/Forms";
+import style from "./App.module.css";
+import Numbers from "./components/numbers/Numbers";
+import Forms from "./components/forms/Forms";
 import Quotes from "./components/quotes/Quotes";
-import Photo from "./components/Photo";
+import Photo from "./components/photo/Photo";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className={style.App}>
       <Numbers />
       <Forms />
       <Quotes />
