@@ -48,26 +48,20 @@ class Numbers extends Component {
       <div>
         <h2>Zadanie 1</h2>
         <Button
-          id={nanoid()}
           type="button"
           text="Losuj liczby"
           func={() => this.getRandomNumbers()}
         />
-        <Button
-          id={nanoid()}
-          type="button"
-          text="Wyczyść"
-          func={() => this.zeroState()}
-        />
+        <Button type="button" text="Wyczyść" func={() => this.zeroState()} />
         <div className={style.wraper}>
           <h3>Parzyste</h3>
-          <ul id={nanoid()} className={style.even}>
+          <ul className={style.even}>
             {evenNumbers.map((num) => (
               <li id={nanoid()}>{num}</li>
             ))}
           </ul>
           <h3>Nieparzyste</h3>
-          <ul id={nanoid()} className={style.odd}>
+          <ul className={style.odd}>
             {oddNumbers.map((num) => (
               <li id={nanoid()}>{num}</li>
             ))}

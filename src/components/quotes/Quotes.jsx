@@ -62,8 +62,8 @@ class Quotes extends Component {
       <div className="App">
         <h2>Zadanie 3</h2>
         <Quote quote={quote} />
-        <Button func={this.prevQuote} text={"Poprzedni cytat"} />
-        <Button func={this.setNewQuote} text={"Nowt cytat"} />
+        <Button type="button" func={this.prevQuote} text={"Poprzedni cytat"} />
+        <Button type="button" func={this.setNewQuote} text={"Nowt cytat"} />
       </div>
     );
   }

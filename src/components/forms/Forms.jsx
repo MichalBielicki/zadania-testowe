@@ -71,7 +71,7 @@ class Forms extends Component {
     return (
       <div>
         <h2>Zadanie 2</h2>
-        <form id={nanoid()} className={style.form} onSubmit={this.handleSubmit}>
+        <form id="form" className={style.form} onSubmit={this.handleSubmit}>
           <label>
             Tytuł książki{" "}
             <input
@@ -128,7 +128,7 @@ class Forms extends Component {
             <option value="Naukowa">Naukowa</option>
             <option value="Historyczna">Historyczna</option>
           </select>
-          <Button func={this.handleSubmit} text={"Dodaj ksiąkę"} />
+          <Button type="submit" form="form" text={"Dodaj ksiąkę"} />
         </form>
         {books.map(({ id, title, author, priority, category }) => (
           <ul className={style.list}>
@@ -137,7 +137,7 @@ class Forms extends Component {
             <li>{priority}</li>
             <li>{category}</li>
             <li>
-              <Button func={() => this.deleteBook(id)} text={"Usuń"} />
+              <Button type="button" func={this.deleteBook} text={"Usuń"} />
             </li>
           </ul>
         ))}
