@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+I. Przeglądarka
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Zadanie polega na napisaniu skryptu w JavaScript, który po kliknięciu w przycisk wygeneruje 20
+losowych liczb całkowitych z zakresu od 1 do 100 i umieści je w dwóch kolumnach. W jednej
+kolumnie mają znaleźć się tylko liczby parzyste, a w drugiej nieparzyste. Dodatkowo obie kolumny
+muszą być posortowane rosnąco.
 
-## Available Scripts
+II. Formularze
 
-In the project directory, you can run:
+Twoim zadaniem jest napisać własną bibliotekę książek z wykorzystaniem HTML, CSS oraz JavaScript,
+w której znajdzie się formularz przyjmujący następujące pola:
+a) Tytuł książki (co najmniej 1 znak)
+b) Autor książki (co najmniej 3 znaki)
+c) Priorytet przeczytania (liczby od 1 do 5)
+d) Listę z kategoriami (3 kategorie do wyboru)
+e) Przycisk umożliwiający wysyłanie
+Po wysłaniu formularza strona nie może się przeładować. Jednocześnie wyświetl nowo dodaną
+książkę w tabeli i wyczyść formularz.
+Kryteria akceptacji:
+• Walidacja dla pól formularza. W przypadku kiedy jakieś pole nie przechodzi walidacji, książka
+nie może zostać dodana.
+• Użytkownik ma możliwość dodania kolejnej książki do tabeli.
+• Cała tabela zapisuje się w localstorage (przy ponownym otworzeniu przeglądarki zostaje
+załadowana ponownie i wyświetlona z takim samym stanem jak była przy zamknięciu).
 
-### `npm start`
+III. React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Przygotowanie aplikacji, która będzie pobierała cytaty z API, która będzie wyświetlała losowy cytat.
+https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd59
+61f026264bb6bb3a6c41671b044f1f4/quotes.json
+Dodatkowo stwórz przycisk który umożliwi wylosowanie następnego cytatu oraz przycisk, który
+pozwoli na powrót do poprzedniego cytatu.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+IV. Frontend CSS
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Umieść na stronie zdjęcie, które zawsze będzie zajmowało 100% szerokości oraz 100% widoku okna
+przeglądarki. Obrazek ma zachowywać proporcje.
