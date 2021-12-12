@@ -137,7 +137,11 @@ class Forms extends Component {
             <li>{priority}</li>
             <li>{category}</li>
             <li>
-              <Button type="button" func={this.deleteBook} text={"Usuń"} />
+              <Button
+                type="button"
+                func={() => this.deleteBook(id)}
+                text={"Usuń"}
+              />
             </li>
           </ul>
         ))}
